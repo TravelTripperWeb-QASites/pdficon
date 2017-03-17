@@ -1,0 +1,35 @@
+/*Events Listing Styles here..*/
+ #content{
+	 &.listing{
+		 article{
+			 padding: 30px;
+			 &:nth-child(even){background:#ececec;}
+		 }
+	 }
+ 	.event-listing{
+ 		.thumbnail-slot{float: left; width: 30%;
+ 			img{width:100%;}
+ 		}
+ 		.short-description{
+ 			display: inline-block; margin-left: 5%; width: 65%;
+			h3{ margin-top: 0px;}
+			.dates{
+				span{ font-weight: 600;}
+			}
+			nav{margin-bottom:0px;}
+ 		}
+ 		@media(max-width:768px){
+ 			.thumbnail-slot{ width:100%;}
+ 			.short-description{width: 100%; margin-left: 0px;}
+ 		}
+ 	}
+	 .pagination{
+		 margin: 0px;
+		 li{cursor: pointer; list-style: none;
+			 &:after{display:none;}
+			 span{border-radius:0px;}
+		 }
+	 }
+	 .date{ font-weight:600;}
+	 .event-detail{padding: 30px 0;}
+} 

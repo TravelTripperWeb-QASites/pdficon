@@ -1,0 +1,68 @@
+---
+layout: default
+title: Gallery | Hell's Kitchen Hotel | WJ Hotel
+excerpt: Check out photos of our unique Hell's Kitchen hotel. View our accommodations, amenities and more at our hotel near NYC's Theater District.
+pageclass: 
+parent: gallery
+---
+
+   <div id="photos">
+         <div class="slideshow">
+            <figure class="photo" style="background-image:url('//cdn.wjhotel.com/3109443156/cms/cache/1920x1080/7c/73-7c420cbac57347f5963dc83e731d1440.jpg');"> <img src="//cdn.wjhotel.com/3109443156/cms/cache/1920x1080/7c/73-7c420cbac57347f5963dc83e731d1440.jpg" alt=""> </figure>
+         </div>
+         <div class="scroll-to-explore">Scroll to Explore</div>
+      </div>
+      
+      <div id="content-area" class="container">
+         <section id="content">
+            {% regionblock wj_gallery_content %}
+              <h1>The Washington Jefferson Gallery</h1>
+              <h2>See Our Hell's Kitchen Hotel</h2>
+              <p>See what&rsquo;s inside the Washington Jefferson Hotel. View the accommodations and amenities at our Hell's Kitchen hotel, and get a peek at what&rsquo;s available in the area surrounding our hotel near NYC's Theater District.</p>
+              <p></p>
+            {% endregionblock %}
+            <div class="galleries">
+               {% assign categories = site.data._models.gallery_categories | sort : "sort_order"  %}
+               {% for cat in categories  %}
+               <article class="gallery col-sm-4">
+                  <div class="col-sm-12">
+                     <h4><a href="#" data-gallery-id="{{cat.cat_id}}">{{cat.cat_name}}</a></h4>
+                     <div class="galleryimage"> <a href="#" data-gallery-id="{{cat.cat_id}}"> <img src="{{cat.cat_thumb_image.url}}" alt="{{cat.thumb_alt}}"></a> <a href="#" data-gallery-id="49" class="thumbnail button">View More </a></div>
+                  </div>
+               </article>
+               {% endfor %}
+            </div>
+<script type="text/javascript"> 
+var galleryJSON = galleryJSON || {};
+ $.each({
+{% for cat in categories | sort : "sort_order" %}  
+   "{{ cat.cat_id }}": {
+        "id": "{{ cat.cat_id }}",
+        "slug": "{{ cat.urlslug }}",
+        "name": "{{ cat.cat_name }}",
+        "title": "{{ cat.cat_name }}",
+        "images": [
+        {% assign counter2 = 0 %}
+         {% assign catimages = site.data._models.gallery_images | sort : "sort_order" %}  
+               {% for catimg in catimages  %}  
+                  {% if cat.cat_id == catimg.category.cat_id %} 
+                     {% assign counter2 = counter2 | plus:1 %}  
+                     {% if counter2 > 1 %},{% endif %}         
+                     {
+                        "image_id": "{{ catimg.img_id }}",
+                        "thumb": "{{ catimg.thumb_image.url }}",
+                        "full": "{{ catimg.full_image.url }}",
+                        "caption": "{{ catimg.img_caption }}"
+                     } 
+                   {% endif %} 
+            {% endfor %}
+        ]
+   }{% unless forloop.last %},{% endunless %}  
+ {% endfor %}  
+ },function($index, $value) {
+    galleryJSON[$index] = $value;
+});
+</script>
+         </section>
+      </div>
+      

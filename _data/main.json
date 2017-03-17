@@ -1,0 +1,65 @@
+
+{  
+      "mainmenu":[
+               {"name":"Our Hotel","url":"/about/", "parent":"about", "dropdown":"yes",
+                "drop-links": [ 
+                    {"name":"Travel Tools","url":"/about/travel-tools/", "parent":"about", "dropdown":"no"},
+                    {"name":"Getting Around","url":"/about/transportation/", "parent":"about", "dropdown":"no"},
+                    {"name":"Amenities","url":"/about/amenities/", "parent":"about", "dropdown":"no"},
+                    {"name":"Press Room","url":"/press/", "parent":"about", "dropdown":"no"},
+                    {"name":"Concierge","url":"/about/concierge/", "parent":"about", "dropdown":"no"},
+                    {"name":"Reviews","url":"/about/reviews/", "parent":"about", "dropdown":"no"},
+                    {"name":"Hell's Kitchen History","url":"/about/hells-kitchen-history/", "parent":"about", "dropdown":"no"},
+                    {"name":"Events","url":"/events", "parent":"about", "dropdown":"no"}
+                 ]}, 
+               {"name":"Accommodations","url":"/accommodations/", "parent":"accommodations", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"Reservations","url":"/accommodations/reservations/", "parent":"accommodations", "dropdown":"no"} 
+                 ]},
+               {"name":"Business Travel","url":"/business/", "parent":"business", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"Area Businesses","url":"/business/area-businesses/", "parent":"business", "dropdown":"no"},
+                    {"name":"Piers 92/94","url":"/business/piers-92-94/", "parent":"business", "dropdown":"no"},
+                    {"name":"Javits Center","url":"/business/javits-center/", "parent":"business", "dropdown":"no"},
+                    {"name":"Corporate Travel RFP","url":"/business/rfp/", "business":"hotels", "dropdown":"no"},
+                    {"name":"Business Travel Amenities","url":"/business/amenities/", "business":"hotels", "dropdown":"no"} 
+                 ]},
+               {"name":"Group Travel","url":"/groups/", "parent":"groups", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"Group Travel RFP","url":"/groups/rfp/", "parent":"groups", "dropdown":"no"} 
+                 ]}, 
+               {"name":"New York City","url":"/nyc/", "parent":"nyc", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"NYC Fashion Week","url":"/nyc/fashion-week/", "parent":"nyc", "dropdown":"no"},
+                    {"name":"Winter Walking Tours","url":"/nyc/winter-walking-tours/", "parent":"nyc", "dropdown":"no"},
+                    {"name":"Avenue Q The Musical","url":"/nyc/avenue-q-the-musical/", "parent":"nyc", "dropdown":"no"},
+                      {"name":"Blog","url":"http://blog.wjhotel.com", "parent":"nyc", "dropdown":"no"} ,
+                       {"name":"Terminal 5","url":"/nyc/terminal-5/", "parent":"nyc", "dropdown":"no"},
+                        {"name":"Tourist Attractions","url":"/nyc/landmarks/", "parent":"nyc", "dropdown":"no"} ,
+                         {"name":"Broadway Theatres","url":"/nyc/broadway-theatres/", "parent":"nyc", "dropdown":"no"},
+                         {"name":"Walking Distance","url":"/nyc/walking/", "parent":"nyc", "dropdown":"no"},
+                         {"name":"Solo Travel","url":"/nyc/solo-travel/", "parent":"nyc", "dropdown":"no"} 
+                 ]},
+
+                 {"name":"Gallery","url":"/gallery/", "parent":"gallery", "dropdown":"no"} 
+
+        
+      ],
+       "top-links":[ 
+                        {"name":"Offers","url":"/specials/", "parent":"specials"},
+                        {"name":"Direction","url":"/location/", "parent":"location"},
+                        {"name":"Contact Us","url":"/contact/", "parent":"contact"},
+                        {"name":"Modify Reservation","url":"https://gc.synxis.com/rez.aspx?Hotel=60994&Chain=16087&template=GCF&shell=GCF4&start=searchres"} 
+                     ], 
+      "footer-links":[ 
+                        {"name":"Press Room","url":"/press/", "parent":"press"},
+                        {"name":"Careers","url":"/careers/", "parent":"careers"},
+                        {"name":"Privacy Policy","url":"/privacy/", "parent":"privacy"},
+                        {"name":"Site Security","url":"/security/", "parent":"security"},
+                        {"name":"Triumph Hotel Group","url":"/triumph/", "parent":"triumph"},
+                        {"name":"FAQs","url":"/faq/", "parent":"faq"},
+                        {"name":"Site Map","url":"/sitemap/", "parent":"sitemap"} 
+                     ],
+     "siteURL": ""
+  
+} 

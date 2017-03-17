@@ -1,0 +1,202 @@
+<header id="header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+   <div id="navbar-hamburger">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </div>
+        <div id="navbar-close" class="hidden">
+        <span class="glyphicon glyphicon-remove"></span>
+        </div>
+    </button>
+     <a href="https://gc.synxis.com/rez.aspx?Hotel=60994&Chain=16087&shell=GCF2" class="button mobile-booknow"> Book Now </a>
+     <a href="/members-only/" class="button membersonly mobile-only">Members Only</a>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            
+              {% for items in obj.mainmenu %} 
+       
+        {% if items.dropdown == "yes" %}
+          <li class="parent">
+                   <a href="{{items.url}}"  
+                   {% if items.parent == page.parent %}
+                     class="active" 
+                    {% endif %} 
+                   >{{items.name}}</a> 
+                   <ul>
+                   {% for subitems in items.drop-links %}
+                      {% if subitems.dropdown == "yes" %}
+                         <li class="parent">
+                                  <a href="{{subitems.url}}">{{subitems.name}}</a> 
+                                  <ul>
+                                  {% for subitem in subitems.drop-links %}
+                                     <li> <a href="{{subitem.url}}">{{subitem.name}}</a> </li>
+                                  {% endfor %}
+                                  </ul>
+                          </li>
+                        {% else if %}
+
+                          
+                          <li> <a href="{{subitems.url}}">{{subitems.name}}</a> </li>
+
+                        {% endif %}
+                      
+                   {% endfor %}
+                   </ul>
+           </li>
+         {% else if %}
+
+           
+           <li> <a href="{{items.url}}"  {% if items.parent == page.parent %}
+                     class="active" 
+                    {% endif %} >{{items.name}}</a> 
+           
+           </li>
+
+         {% endif %}
+ 
+    {% endfor %}
+     <li> <a href="/specials/">Offers</a> </li>
+        <li> <a href="/location/">Directions</a> </li>
+        <li> <a href="/contact/">Contact Us</a> </li>
+        <li> <a href="https://gc.synxis.com/rez.aspx?Hotel=60994&Chain=16087&template=GCF&shell=GCF4&start=searchres&_ga=1.184689897.1105710035.1483511152" target="_blank">Modify Reservation</a> </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+         <div class="wrapper">
+            <a id="logo" class="fn org" href="/" title="Washington Jefferson Hotel"> <img src="/images/logo.png" alt="Washington Jefferson Hotel"> </a> <a href="/members-only/" class="button membersonly">Members Only</a> 
+            <div class="topmenuwrapper">
+               <nav id="languages">
+                  <a id="icon-lang" href="#" class="active">EN</a> 
+                  <ul>
+                     <li> <a href="/inicio/" class="">Español</a> </li>
+                     <li> <a href="/pagina-inicial/" class="">Português</a> </li>
+                     <li> <a href="/accueil/" class="">Français</a> </li>
+                     <li> <a href="/startseite/" class="">Deutsch</a> </li>
+                  </ul>
+               </nav>
+               <ul class="socials">
+                  <li> <a class="facebook" href="https://www.facebook.com/WJHotel/" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Washington Jefferson Hotel'; (s.tl(this,'e','Washington Jefferson Hotel - Facebook - Website Referral') );">Facebook</a> </li>
+                  <li> <a class="twitter" href="https:/twitter.com/WJHotel/" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Washington Jefferson Hotel'; (s.tl(this,'e','Washington Jefferson Hotel - Twitter - Website Referral') );">Twitter</a> </li>
+                  <li> <a class="google" href="https:/plus.google.com/b/116455943502058505511/116455943502058505511/about?hl=en/" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Washington Jefferson Hotel'; (s.tl(this,'e','Washington Jefferson Hotel - Google - Website Referral') );">Google</a> </li>
+                  <li> <a class="instagram" href="https:/instagram.com/wjhotel/" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Washington Jefferson Hotel'; (s.tl(this,'e','Washington Jefferson Hotel - Instagram - Website Referral') );">Instagram</a> </li>
+               </ul>
+               <nav id="top-menu">
+                  <ul>
+                  {% for toplinks in obj.top-links %} 
+                  {% if toplinks.parent == page.parent %} 
+                  <li> <a href="{{toplinks.url}}"  class="active">{{toplinks.name}}</a> </li>
+                  {% else if %}
+                    <li> <a href="{{toplinks.url}}">{{toplinks.name}}</a> </li>
+                  {% endif %} 
+                 {% endfor %}
+                  {% comment %}
+                     <li> <a href="/specials/">Special Offers</a> </li>
+                     <li> <a href="/location/">Maps & Directions</a> </li>
+                     <li> <a href="/contact/">Contact Us</a> </li>
+                     <li> <a href="/gallery/">Gallery</a> </li>
+                  {% endcomment %}
+                  </ul>
+               </nav>
+            </div>
+            <nav id="main-menu">
+            {% include nav.html %}
+            {% comment %}
+               <ul>
+                  <li class="parent">
+                     <a href="/about/">Our Hotel</a> 
+                     <ul>
+                        <li> <a href="/about/travel-tools/">Travel Tools</a> </li>
+                        <li> <a href="/about/transportation/">Getting Around</a> </li>
+                        <li> <a href="/about/amenities/">Amenities</a> </li>
+                        <li> <a href="/press/">Press Room</a> </li>
+                        <li> <a href="/about/concierge/">Concierge</a> </li>
+                        <li> <a href="/about/reviews/">Reviews</a> </li>
+                        <li> <a href="/about/hells-kitchen-history/">Hell's Kitchen History</a> </li>
+                     </ul>
+                  </li>
+                  <li class="parent">
+                     <a href="/accommodations/">Accommodations</a> 
+                     <ul>
+                        <li> <a href="/accommodations/reservations/">Reservations</a> </li>
+                     </ul>
+                  </li>
+                  <li class="parent">
+                     <a href="/business/">Business Travel</a> 
+                     <ul>
+                        <li> <a href="/business/area-businesses/">Area Businesses</a> </li>
+                        <li> <a href="/business/piers-92-94/">Piers 92/94</a> </li>
+                        <li> <a href="/business/javits-center/">Javits Center</a> </li>
+                        <li> <a href="/business/rfp/">Corporate Travel RFP</a> </li>
+                        <li> <a href="/business/amenities/">Business Travel Amenities</a> </li>
+                     </ul>
+                  </li>
+                  <li class="parent">
+                     <a href="/groups/">Group Travel</a> 
+                     <ul>
+                        <li> <a href="/groups/rfp/">Group Travel RFP</a> </li>
+                     </ul>
+                  </li>
+                  <li class="parent">
+                     <a href="/nyc/">New York City</a> 
+                     <ul>
+                        <li> <a href="/nyc/thanksgiving-day-parade/">Thanksgiving Day Parade</a> </li>
+                        <li> <a href="/nyc/avenue-q-the-musical/">Avenue Q The Musical</a> </li>
+                        <li> <a href="/nyc/fall-nyc-events/">Fall NYC Events</a> </li>
+                        <li> <a href="/http:/blog.wjhotel.com/">Blog</a> </li>
+                        <li> <a href="/nyc/terminal-5/">Terminal 5</a> </li>
+                        <li> <a href="/nyc/landmarks/">Tourist Attractions</a> </li>
+                        <li> <a href="/nyc/broadway-theatres/">Broadway Theatres</a> </li>
+                        <li> <a href="/nyc/walking/">Walking Distance</a> </li>
+                        <li> <a href="/nyc/calendar/">Calendar of Events</a> </li>
+                        <li> <a href="/nyc/solo-travel/">Solo Travel</a> </li>
+                     </ul>
+                  </li>
+               </ul>
+               {% endcomment %}
+            </nav>
+         </div>
+         </div>
+         </div>
+      </header>
+      <div id="booking-wrapper" class="">
+         <article id="booking" class="wrapper container">
+            <form action="https://gc.synxis.com/rez.aspx?" method="get" target="_blank" class="form">
+             <input type="hidden" name="hotel" value="60994">
+             <input type="hidden" name="chain" value="16087">
+             <input type="hidden" name="shell" value="GCF2">
+            <input type="hidden" name="start" value="availresults">
+               <fieldset>
+                  <legend>Make Your Reservation</legend>
+                  <div class="columns">
+                     <div class="column dates"> <input type="text" class="date-picker booking-dates validate[required]" name="arrive" placeholder="Check-in" id="booking-checkin"> </div>
+                     <div class="column dates"> <input type="text" class="date-picker booking-dates" name="depart" placeholder="Check-out" id="booking-checkout"> </div>
+                     <div class="column promo">
+                        <select id="code-dropdown">
+                           <option value="1">Group Code</option>
+                           <option value="2">Promo Code</option>
+                           <option value="4">Corporate Code</option>
+                           <option value="3">Travel Agent ID</option>
+                        </select>
+                     </div>
+                     <input type="text" id="code" name="promo" placeholder=""> 
+                     <div class="column submit"> <input type="hidden" name="uuid" class="uuid"> <button type="submit" class="button" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event6,scOpen'; s.events='event6,scOpen'; s.products=';Washington Jefferson Hotel'; (s.tl(this,'o','Booking Initiated') );">Book Now</button> </div>
+                     <div class="column form-info"> <a class="bestrate" href="/accommodations/reservations/guarantee/">Best Rate Guarantee</a> <span class="reservation-phone InfinityNumber">212-246-7550</span> </div>
+                  </div>
+               </fieldset>
+            </form>
+            <!--div id="reminder">
+               <span>Remind me to book later</span> 
+               <form action="https://submit.jotform.me/submit/63080847025454/" method="post" name="form_63080847025454" id="63080847025454" accept-charset="utf-8" class="reminder">
+               <input type="hidden" name="formID" value="63080847025454" />
+                  <div class="cal"></div>
+                  <span class="note">We will send you an email reminder on this date</span> <input type="text" required="required" name="q3_email"  class="validate[required,custom[email]]"> <input type="hidden" name="q4_time" required="required"> <input type="submit" value="submit"> 
+               </form>
+            </div-->
+         </article>
+      </div>

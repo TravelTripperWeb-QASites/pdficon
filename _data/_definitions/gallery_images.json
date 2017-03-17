@@ -1,0 +1,37 @@
+{
+   "category":
+    {
+      "label": "Choose Category",
+      "type":"model",
+      "display_field": "cat_name", 
+      "model_name":"gallery_categories"
+    }, 
+    "img_id":
+    {
+      "type": "integer",
+      "required": true,  
+      "label": "Image ID"
+    },
+    "img_caption":
+    {
+      "required": false,  
+      "label": "Caption"
+    },
+    "thumb_image":
+    {
+      "required": true,  
+      "type": "image",
+      "label": "Upload Thumb Image"   
+    },   
+     "full_image":
+    {
+      "required": true,  
+      "type": "image",
+      "label": "Upload Full Image"   
+    },            
+    "sort_order": 
+    { 
+      "type": "integer",
+      "required": true 
+    }
+}

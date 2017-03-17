@@ -1,15 +1,22 @@
-
-gems:
-- jekyll-sitemap
-keep_files:
-- assets
-rsync_copy:
-- _assets
-exclude:
-- sitemap.json
-- media.json
-- old_media.json
-- models.json
+permalink: pretty
 
 default_lang: 'en'
 languages: ['en']
+
+page_gen:
+
+  - data: 'special-offers'
+    template: 'offer-details'
+    dir: 'specials'
+
+  - data: 'events'
+    template: 'event-details'
+    dir: 'events'
+
+data_paginate:
+  per_page: 5
+  data: 'events'
+  path: 'events/page:num'
+  pagination_template: 'events/index.html'
+  sort_field: 'from_date'
+  sort_reverse: true

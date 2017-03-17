@@ -1,0 +1,128 @@
+{% assign name = obj %}{% assign obj = site.data.main %}<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLCTG3G');</script>
+<!-- End Google Tag Manager -->
+  <title>{% if page.page_title %}{{ page.page_title | escape }}{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.meta_content %}{{ page.meta_content | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="google-site-verification" content="wbls7iYBq8RJU8fAd16oZBDyIiXfWa6MpVYw54SrMbk" />
+  {% if page.is_private %}<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">{% endif %}
+<script type="text/javascript">if(window.top.location!=document.location)window.top.location.href=document.location.href;</script>
+ <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="https://www.wjhotel.com{{ page.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+ <script src="/js/jquery.min.js"></script>
+ <!-- start Fancybox code  -->
+
+<!-- end Fancybox code  -->
+  
+ <script src="/js/geo_special.js"></script>   
+ <script src="/js/bootstrap.min.js"></script>
+ <!--script src="https://www.geoplugin.net/javascript.gp" type="text/javascript"> </script-->
+  
+  <script src="/js/main.js"></script> 
+ <script src="/js/scripts.min.js"></script> 
+  <!-- start Fancybox code  -->
+
+ <!-- end Fancybox code  -->
+  
+ <!--script src="//www.hebsfbtabs.com/rap/hebsrap.0.2.js" id="hebsrap" data-hotel="60994" data-autoupdate="4" data-width="744" data-height="414" data-framesrc="/skins/wjhotel/assets/rap/index[N].html" data-frames="2" async defer></script--> 
+<script>
+        var siteURL = '{{obj.siteURL}}',
+            templateURL = '/',
+            siteSettings = {
+                name: "Washington Jefferson Hotel",
+                country: "",
+                state: "NY",
+                city: "New York",
+                adr: "318 West 51st Street",
+                zip: "10019",
+                lat: "40.7632132",
+                lng: "-73.98688349999998",
+                phone: "212-246-7550",
+            };
+            
+        $(document).ready(function(){
+            function getParameterByName(name, url) {
+                    if (!url) url = window.location.href;
+                    name = name.replace(/[\[\]]/g, "\\$&");
+                    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                        results = regex.exec(url);
+                    if (!results) return null;
+                    if (!results[2]) return '';
+                    return decodeURIComponent(results[2].replace(/\+/g, " "));
+             }
+
+           if(getParameterByName('scemail')){ 
+              $("#email").val(getParameterByName('scemail'));  
+             }
+      });
+            
+    </script>
+
+   <script src="//maps.google.com/maps/api/js?key=AIzaSyBHnj8OpjBbDI3eeVWGL8U3IvJiWmwTvGc"></script>
+ 
+
+<!-- Infinity Tracking Code v2.0
+Copyright Infinity 2017 
+www.infinitycloud.com -->
+
+<script type="text/javascript">
+
+var _ictt = _ictt || [];
+
+_ictt.push(['_setIgrp','2236']); // Installation ID
+
+_ictt.push(['_enableGAIntegration',{'gua':true,'ga':false}]);
+
+_ictt.push(['_enableAutoDiscovery']);
+
+_ictt.push(['_track']);
+
+(function() {
+
+var ict = document.createElement('script'); ict.type = 'text/javascript'; ict.async = true;
+
+ict.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'ict.infinity-tracking.net/js/nas.v1.min.js';
+
+var scr = document.getElementsByTagName('script')[0]; scr.parentNode.insertBefore(ict, scr);
+
+})();
+
+</script>
+
+<!-- Infinity Tracking Code End -->
+
+<!--Start Guestfolio Signup Assets-->
+<script src="https://guestfolio.net/assets/embedded.js" type="text/javascript"></script>
+<!--End Guestfolio Signup Assets-->
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '821305881334020'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=821305881334020&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>

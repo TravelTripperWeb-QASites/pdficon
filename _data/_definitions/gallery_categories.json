@@ -1,0 +1,34 @@
+{
+    "cat_id":
+    {
+      "required": true, 
+      "type": "integer", 
+      "label": "Category ID"
+    },
+    "cat_name":
+    {
+      "required": true,  
+      "label": "Category Title"
+    }, 
+    "urlslug":
+    {
+      "required": true,  
+      "label": "Category Url Slug"
+    },        
+    "cat_thumb_image":
+    {
+      "required": true,  
+      "type": "image",
+      "label": "Upload Thumb"   
+    },        
+    "thumb_alt":
+    {
+      "required": true,  
+      "label": "Thumb Alt Text"
+    },    
+    "sort_order": 
+    { 
+      "type": "integer",
+      "required": true 
+    }
+}

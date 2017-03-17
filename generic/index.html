@@ -1,0 +1,35 @@
+---
+layout: default
+title: Jobs | Theater District Hotel NYC | WJ Hotel
+excerpt: Jumpstart a fulfilling career in hospitality with the Washington Jefferson Hotel, offering fulfilling jobs in our boutique Theater District hotel in NYC.
+pageclass:  
+parent: generic
+---
+
+      <div id="photos">
+         <div class="slideshow">
+            <figure class="photo" style="background-image:url('/images/cms/cache/1920x1080/89/302-890ef6634f3af086b64d81c985ea14d9.jpg');"> <img src="/images/cms/cache/1920x1080/89/302-890ef6634f3af086b64d81c985ea14d9.jpg" alt=""> </figure>
+         </div>
+         <div class="scroll-to-explore">Scroll to Explore</div>
+      </div>
+      <div id="content-area" class="container">
+          <aside id="sidebar"> 
+            <nav id="submenu">
+               <h4><a href="/explore">New York City</a></h4>
+               <ul>
+                  {% for p in pages %}
+                    {% if p.url contains '/generic/' %}  
+                      <li><a href="{{p.url}}">{{ p.url  | remove: '/generic/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                    {% endif %}
+                  {% endfor %}                
+               </ul>
+            </nav>
+         </aside>
+         <section id="content">
+         {% regionblock careers_content %}
+
+         {% endregionblock%} 
+         </section>
+      </div>
+      
+   

@@ -1,0 +1,64 @@
+ <footer id="footer">
+         <div class="footer-wrapper">
+         <div class="container">
+         <div class="col-md-12">
+            <nav id="footer-menu" class="wrapper">
+               <ul>
+                   {% for footerlink in obj.footer-links %} 
+                  {% if footerlink.parent == page.parent %} 
+                  <li> <a href="{{footerlink.url}}"  class="active">{{footerlink.name}}</a> </li>
+                  {% else if %}
+                    <li> <a href="{{footerlink.url}}">{{footerlink.name}}</a> </li>
+                  {% endif %} 
+                 {% endfor %}
+               </ul>
+               <small class="copyright">&copy; 2016 Washington Jefferson Hotel</small> 
+            </nav>
+         </div>
+         </div>
+         </div>
+         <div id="info-wrapper" class="wrapper container">
+         <div class="row">
+         <div class="col-xs-12 col-sm-6 col-md-3">
+            <article class="block-1 block">
+               <h4>WJ Hotel</h4>
+               <span class="adr"> <span class="street-address">318 West 51st Street</span><br> <span class="locality">New York</span>, <span class="region">NY</span> <span class="postal-code">10019</span> </span> 
+            </article>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+            <article class="block-2 block">
+               <h4>Reservations</h4>
+               <span class="tel"><span class="type">Phone:</span> <span class="value InfinityNumber">(212) 246-7550</span></span><br> <span><a href="mailto:reservations@wjhotel.com">reservations@wjhotel.com</a></span> 
+            </article>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+            <article class="block-3 block">
+               <h4>Sales Inquiries</h4>
+               <span class="tel"><span class="type">Phone:</span> <span class="value InfinityNumber">(212) 277-8312</span></span><br> <span><a href="mailto:sales@wjhotel.com">sales@wjhotel.com</a></span> 
+            </article>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+            <article class="block-4 block">
+               <h4>Stay Connected</h4>
+               <form action="/connect/#content" method="get">
+                  <fieldset>
+                     <legend></legend>
+                     <p> <input type="text" name="scemail" id="sc-email" value="" class="text validate[required,custom[email]]" placeholder="Your Email"> <input type="submit" value=""> </p>
+                  </fieldset>
+               </form>
+            </article>
+            </div> 
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+            <a href="https://www.triumphhotels.com/" class="triumphhotels icons" target="_blank">Triumph Hotels</a> 
+            <div class="sabrebusiness icons" ></div>
+            <div class="ta-block">
+               <div class="ta-logo"></div>
+               <p>Certificate of Excellence 2016<br> <a href="#" target="_blank">Washington Jefferson Hotel</a> </p>
+            </div>
+            </div>
+            </div>
+         </div>
+      </footer>
+     
