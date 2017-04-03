@@ -1,0 +1,38 @@
+---
+layout: default
+pagename: event-details
+title:  Hotel Washington Jefferson
+excerpt: Hotel Washington Jefferson
+pageclass: hotel
+parent: events
+---
+{% assign events = page %}
+{% assign model = page %}
+{% assign seo_title = events.seo_title %}
+{% assign seo_description = events.seo_description %}
+
+<div id="photos">
+    <div class="slideshow">
+        <figure class="photo" style="background-image:url('{{events.eventimage.url}}');"> <img src="{{events.eventimage.url}}" alt=""> </figure>
+    </div>
+    <div class="scroll-to-explore">{{events.title}}</div>
+</div>
+<section id="content" class="container">
+    <h1>{{events.title}}</h1>
+    <span class="date">
+        {{ events.from_date | date: "%B %-d, %Y" }}
+     </span>
+    &nbsp;to&nbsp;
+    <span class="date">
+        {{ events.to_date | date: "%B %-d,  %Y" }}
+     </span>
+    <br>Location: <span class="date">{{events.location}}</span>
+    <div class="event-detail">{{events.more_content}}</div>
+    <div>
+        {% if events.event_url and events.event_url !="" %}
+        <a href="{{events.event_url}}" class="button">View Event Site</a>
+        {% endif %}
+        <a href="/events" class="button">View all Events</a>
+    </div>
+</section>
+

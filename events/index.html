@@ -1,0 +1,119 @@
+---
+layout: default
+pagename: events
+title: Hotel Washington Jefferson
+excerpt: Hotel Washington Jefferson
+pageclass: hotel
+parent: events
+---
+
+<div id="photos">
+    <div class="slideshow">
+      {% assign banners = site.data._models.homepage_slideshow %}
+      {% for banner in banners %} 
+         {% if banner.CountryCode %}  
+            <figure class="bannerfor{% for country in banner.CountryCode %} {{country.code}}{% endfor %} photo {{banner.returnUser}}" style="background-image:url('{{banner.image.url}}');">
+         {% else %}
+            <figure class="photo {{banner.returnUser}}" style="background-image:url('{{banner.image.url}}');">
+         {% endif %} 
+         </figure>
+      {% endfor %} 
+   </div>
+   <div class="scroll-to-explore">Scroll to Explore</div>
+</div>
+<div class="container">
+    <!--<aside id="sidebar">
+       <nav id="submenu">
+          <h4><a href="/explore">New York City</a></h4>
+          <ul>
+             li class=""> <a href="/explore/winter-nyc-events">Winter NYC Events</a> </li>
+             <li class=""> <a href="/explore/holiday-walking-tours">Holiday Walking Tours</a> </li>
+             <li class=""> <a href="/explore/walking-tours">Walking Tours</a> </li
+               <li > <a href="/explore/winter-walking-tours">Winter Walking Tours</a> </li>
+             <li class=""> <a href="/explore/neighborhood">Neighborhood</a> </li>
+             <li class=""> <a href="/explore/walkingdistance">Within Walking Distance</a> </li>
+
+             <li class=""> <a href="http://blog.cosmohotel.com/">Blog</a> </li>
+          </ul>
+       </nav>
+    </aside>-->
+    <section id="content" class="listing">
+        <h1>Events</h1>
+        {% for post in data_paginator.posts %}
+        <article class="special event-listing">
+            <div class="thumbnail-slot">
+                <a href="/events/{{ post.url_friendly_name }}"><img src="{{post.eventimage.url}}" alt="{{post.title}}"></a>
+
+            </div>
+            <div class="short-description">
+                <h3><a href="/events/{{ post.url_friendly_name }}">{{post.title}}</a></h3>
+                <p class="dates">
+				   	   <span>
+				   	   		{{ post.from_date | date: "%B %-d, %Y" }}
+					   </span>
+                    {% if post.to_date %}
+                    &nbsp;to&nbsp;
+                    <span>
+					   		{{ post.to_date | date: "%B %-d, %Y" }}
+					   </span>
+                    {% endif %}
+                    <br>Location: <span>{{post.location}}</span>
+                </p>
+                <p>
+                    {% if post.short_description != "" %}
+                    {{post.short_description}}
+                    {% endif %}
+                </p>
+                <nav>
+                    <a href="/events/{{ post.url_friendly_name }}" class="button">Read More</a>
+                    <!--<a href="https://www.triumphhotels.com/walking-tours-rfp/walking-tours-rfp/" class="button" target="_blank" rel="nofollow">Book Package Online</a> -->
+                </nav>
+            </div>
+        </article>
+        {% endfor %}
+        <div class="pagination-wrapper">
+            <div class="pagination">
+                <p><span class="page_number ">Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</span></p>
+                <ul class="pagination">
+                    {% if data_paginator.previous_page %}
+                    <li><a href="{{ data_paginator.previous_page_path }}" class="previous">Previous</a></li>
+                    {% else %}
+                    <li><span class="previous">Previous</span></li>
+                    {% endif %}
+                    {% if data_paginator.next_page %}
+                    <li><a href="{{ data_paginator.next_page_path }}" class="next">Next</a></li>
+                    {% else %}
+                    <li><span class="next ">Next</span></li>
+                    {% endif %}
+                </ul>
+
+            </div>
+        </div>
+        <!--<article class="special  event-listing">
+           <div class="thumbnail-slot">
+                   <a href="/explore/neighborhood/"><img src="/images/cms/cache/712X491/02.jpg" alt="" title="Neighbourhood"></a>
+           </div>
+           <div class="short-description">
+                  <h3><a href="/explore/neighborhood/">Neighbourhood</a></h3>
+               <p>The Cosmopolitan Hotel - TriBeCa is located in the heart of lower Manhattan, on the border of Tribeca and the Financial District. </p>
+               <nav>
+                   <a href="/explore/neighborhood/" class="button">Read More</a>
+
+               </nav>
+           </div>
+        </article>
+        <article class="special odd event-listing">
+           <div class="thumbnail-slot">
+                   <a href="/explore/walkingdistance/"><img src="/images/cms/cache/712X491/03.jpg" alt="" title="Within Walking Distance"></a>
+           </div>
+           <div class="short-description">
+                  <h3><a href="/explore/walkingdistance/">Within Walking Distance</a></h3>
+               <p>The Cosmopolitan Hotel - TriBeCa is located on the border of The Financial District and Tribeca in lower Manhattan, within walking distance of many of New York's best attractions, restaurants, and shops. </p>
+               <nav>
+                   <a href="/explore/walkingdistance/" class="button">Read More</a>
+
+               </nav>
+           </div>
+        </article>-->
+    </section>
+</div>

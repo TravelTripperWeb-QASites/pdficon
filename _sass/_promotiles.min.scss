@@ -1,0 +1,281 @@
+/* PROMO TILES */
+@font-face {
+  font-family: 'robotomedium';
+  src: url("/fonts/roboto-medium-webfont.eot");
+  src: url("/fonts/roboto-medium-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/fonts/roboto-medium-webfont.woff") format("woff"), url("/fonts/roboto-medium-webfont.ttf") format("truetype"), url("/fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto_condensedregular';
+  src: url("/fonts/robotocondensed-regular-webfont.eot");
+  src: url("/fonts/robotocondensed-regular-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/robotocondensed-regular-webfont.woff2") format("woff2"), url("/fonts/robotocondensed-regular-webfont.woff") format("woff"), url("/fonts/robotocondensed-regular-webfont.ttf") format("truetype"), url("/fonts/robotocondensed-regular-webfont.svg#roboto_condensedregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto_condensedbold';
+  src: url("/fonts/robotocondensed-bold-webfont.eot");
+  src: url("/fonts/robotocondensed-bold-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/robotocondensed-bold-webfont.woff2") format("woff2"), url("/fonts/robotocondensed-bold-webfont.woff") format("woff"), url("/fonts/robotocondensed-bold-webfont.ttf") format("truetype"), url("/fonts/robotocondensed-bold-webfont.svg#roboto_condensedbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto_condenseditalic';
+  src: url("/fonts/robotocondensed-italic-webfont.eot");
+  src: url("/fonts/robotocondensed-italic-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/robotocondensed-italic-webfont.woff2") format("woff2"), url("/fonts/robotocondensed-italic-webfont.woff") format("woff"), url("/fonts/robotocondensed-italic-webfont.ttf") format("truetype"), url("/fonts/robotocondensed-italic-webfont.svg#roboto_condenseditalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("/fonts/opensans-regular-webfont.eot");
+  src: url("/fonts/opensans-regular-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans-regular-webfont.woff") format("woff"), url("/fonts/opensans-regular-webfont.ttf") format("truetype"), url("/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("/fonts/opensans-bold-webfont.eot");
+  src: url("/fonts/opensans-bold-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans-bold-webfont.woff") format("woff"), url("/fonts/opensans-bold-webfont.ttf") format("truetype"), url("/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url("/fonts/opensans-italic-webfont.eot");
+  src: url("/fonts/opensans-italic-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans-italic-webfont.woff2") format("woff2"), url("/fonts/opensans-italic-webfont.woff") format("woff"), url("/fonts/opensans-italic-webfont.ttf") format("truetype"), url("/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansbold_italic';
+  src: url("/fonts/opensans-bolditalic-webfont.eot");
+  src: url("/fonts/opensans-bolditalic-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("/fonts/opensans-bolditalic-webfont.woff") format("woff"), url("/fonts/opensans-bolditalic-webfont.ttf") format("truetype"), url("/fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'crimson_textroman';
+  src: url("/fonts/crimsontext-roman-webfont.eot");
+  src: url("/fonts/crimsontext-roman-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/crimsontext-roman-webfont.woff") format("woff"), url("/fonts/crimsontext-roman-webfont.ttf") format("truetype"), url("/fonts/crimsontext-roman-webfont.svg#crimson_textroman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'crimson_textsemibold';
+  src: url("/fonts/crimsontext-semibold-webfont.eot");
+  src: url("/fonts/crimsontext-semibold-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/crimsontext-semibold-webfont.woff") format("woff"), url("/fonts/crimsontext-semibold-webfont.ttf") format("truetype"), url("/fonts/crimsontext-semibold-webfont.svg#crimson_textsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("/fonts/lato-regular-webfont.eot");
+  src: url("/fonts/lato-regular-webfontd41d.eot?#iefix") format("embedded-opentype"), url("/fonts/lato-regular-webfont.woff") format("woff"), url("/fonts/lato-regular-webfont.ttf") format("truetype"), url("/fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* PROMO TILES */
+.admin .preview-item {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+.admin .preview-item p {
+  width: auto;
+}
+.admin .preview-item span {
+  float: none;
+}
+.admin .preview-item a.button {
+  border-radius: 0;
+  background: #c29a5e;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
+  position: absolute;
+  top: -45px;
+  left: 10px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: none;
+  box-shadow: none;
+}
+.admin .preview-item a.button:hover {
+  background-color: #543019;
+  color: #fff;
+}
+
+#promos article:first-child {
+  margin-left: 0;
+}
+
+#promos article, .admin .preview-item article {
+  float: left;
+  position: relative;
+  width: 220px !Important;
+  padding: 0;
+  height: 404px;
+  overflow: hidden;
+  line-height: 16px;
+  margin-left: 20px;
+}
+
+#promos .bx-viewport article {
+  margin-left: 0 !important;
+  margin-right: 20px;
+}
+
+#promos h4, .admin .preview-item h4 {
+  position: relative;
+  height: 40px;
+  border-left: 1px solid #543019;
+  margin: 20px 10px 20px 0;
+  padding-left: 20px;
+}
+
+#promos h4 a, .admin .preview-item a {
+  font-family: "crimson_textroman";
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#promos h4 a:hover, .admin .preview-item a:hover {
+  color: #333333;
+}
+
+.admin .preview-item h4:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#promos .description, .admin .preview-item .description {
+  display: block;
+  position: relative;
+  height: 90px;
+}
+
+#promos .description .fs_descr, #promos .price,
+.admin .preview-item .description .fs_descr {
+  color: #000;
+  font-family: 'open_sansregular', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 175px;
+}
+
+#promos .thumbnail,
+.admin .preview-item .thumbnail {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#promos.wrapper {
+  width: 940px;
+}
+#promos:before {
+  content: attr(data-promos);
+  position: absolute;
+  right: 0;
+  top: 20px;
+  height: 40px;
+  width: 1px;
+  background: #000;
+}
+#promos:before {
+  right: auto;
+  left: 0;
+}
+#promos.no-after:after {
+  display: none;
+}
+#promos .slideshow {
+  clear: both;
+  overflow: hidden;
+}
+#promos a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+#promos h4:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -1px;
+}
+#promos .description a {
+  height: 26px;
+  line-height: 26px;
+  position: absolute;
+  top: -45px;
+  left: 10px;
+  font-family: "crimson_textroman";
+}
+#promos .description a:active {
+  background: #333333;
+}
+#promos .price {
+  font-family: 'open_sansbold', sans-serif;
+  color: #c29a5e;
+}
+#promos .button:hover {
+  background-color: #543019 !important;
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
+/* BX-SLIDER CONTROLS */
+#promos .bx-prev, #promos .bx-next {
+  background: url("/images/sprite.svg") 0 0 no-repeat;
+  height: 35px;
+  width: 35px;
+  text-indent: -9999px;
+  display: block;
+  position: absolute;
+  top: 173px;
+  color: #ffffff;
+}
+.no-svg #promos .bx-prev, .no-svg #promos .bx-next {
+  background-image: url("/images/sprite.png");
+}
+#promos .bx-prev {
+  background-position: 0 -233px;
+  left: -55px;
+}
+#promos .bx-prev:hover {
+  background-position: -100px -233px;
+}
+#promos .bx-prev:active {
+  left: -56px;
+}
+#promos .bx-next {
+  background-position: -50px -233px;
+  right: -55px;
+}
+#promos .bx-next:hover {
+  background-position: -150px -233px;
+}
+#promos .bx-next:active {
+  right: -56px;
+}
+

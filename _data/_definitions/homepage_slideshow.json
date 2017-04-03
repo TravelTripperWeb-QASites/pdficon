@@ -1,0 +1,8 @@
+{
+  "name": {}, 
+  "image": {"type":"image", "required": true },
+  "linktype": {"label":"Link Type","type":"select","options":["Book Now","Join Today","Read More","Image"],"required": true}, 
+  "booknow": {"hint":"Enter url","label":"URL"},
+  "CountryCode": {"label":"Country","type":"model","display_field": "name", "model_name":"geotargeting_do_not_edit", "multiple" :true, "default_text": "Select Country","required": true},
+  "returnUser": {"label":"User Type","type":"select", "options":["All","New","Return","Non-Members","Members"],"required": true}
+}

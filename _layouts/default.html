@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head></head>
-  <body>
+<!DOCTYPE html> 
+ {% include head.html %}
+  <body class="vcard {{ page.pageclass }}">
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLCTG3G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+   {% include header.html %}
     <div>
       
         {{ content }}
       
+      {% include footer.html %}
     </div>
+
   </body>
 </html>

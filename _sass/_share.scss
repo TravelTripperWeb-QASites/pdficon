@@ -1,0 +1,58 @@
+#share-this-site {
+	padding:0;
+	margin:0 5px 5px;
+	width:420px;
+}
+
+#share-this-site li {
+	float:left;
+	width:130px;
+	margin:0 5px;
+	font-size:0;
+}
+#share-this-site a {
+	position:relative;
+	display:block;
+	height:16px;
+	padding:0 0 0 20px;
+	margin:5px 0;
+	font-size:12px;
+	line-height:18px;
+	text-decoration:none;
+}
+#share-this-site a:active {top: auto;}
+#share-this-site a .icon {
+	width:16px;
+	height:16px;
+	background:url(../images/socialshare.png) 0 0 no-repeat;
+}
+#share-this-site a.share_facebook .icon {background-position:-998px 0}
+#share-this-site a.share_facebook:hover .icon {background-position:-1034px 0}
+#share-this-site a.share_twitter .icon {background-position:-998px -36px}
+#share-this-site a.share_twitter:hover .icon {background-position:-1034px -36px}
+#share-this-site a.share_tumblr .icon {background-position:-998px -72px}
+#share-this-site a.share_tumblr:hover .icon {background-position:-1034px -72px}
+#share-this-site a.share_linkedin .icon {background-position:-998px -108px}
+#share-this-site a.share_linkedin:hover .icon {background-position:-1034px -108px}
+#share-this-site a.share_digg .icon {background-position:-998px -144px}
+#share-this-site a.share_digg:hover .icon {background-position:-1034px -144px}
+#share-this-site a.share_delicious .icon {background-position:-998px -180px}
+#share-this-site a.share_delicious:hover .icon {background-position:-1034px -180px}
+#share-this-site a.share_stumbleupon .icon {background-position:-998px -216px}
+#share-this-site a.share_stumbleupon:hover .icon {background-position:-1034px -216px}
+#share-this-site a.share_orkut .icon {background-position:-998px -252px}
+#share-this-site a.share_orkut:hover .icon {background-position:-1034px -252px}
+#share-this-site a.share_myspace .icon {background-position:-998px -288px}
+#share-this-site a.share_myspace:hover .icon {background-position:-1034px -288px}
+#share-this-site a.share_yammer .icon {background-position:-998px -324px}
+#share-this-site a.share_yammer:hover .icon {background-position:-1034px -324px}
+#share-this-site a.share_pinterest .icon {background-position:-998px -360px}
+#share-this-site a.share_pinterest:hover .icon {background-position:-1034px -360px}
+#share-this-site a.share_bebo .icon {background-position:-998px -396px}
+#share-this-site a.share_bebo:hover .icon {background-position:-1034px -396px}
+#share-this-site a.share_live .icon {background-position:-998px -432px}
+#share-this-site a.share_live:hover .icon {background-position:-1034px -432px}
+#share-this-site a.share_google .icon {background-position:-998px -468px}
+#share-this-site a.share_google:hover .icon {background-position:-1034px -468px}
+#share-this-site a.share_email .icon {background-position:-998px -504px}
+#share-this-site a.share_email:hover .icon {background-position:-1034px -504px}

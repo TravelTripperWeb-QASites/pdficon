@@ -1,0 +1,23 @@
+{"title":
+{"required":true},
+  "eventimage":
+  {"type":"image","required":true},
+  "seo_title":
+  {},
+  "seo_description":
+  {},
+  "url_friendly_name":
+  {"type":"url_slug"},
+  "from_date":
+  {"type":"date","required":true},
+  "to_date":
+  {"type":"date"},
+  "location":
+  {"required":true},
+  "event_url":
+  {},
+  "short_description":
+  {"required":false,"type":"richtext"},
+  "more_content":
+  {"type":"richtext"}
+}

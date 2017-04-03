@@ -1,0 +1,21 @@
+<script type="text/javascript">
+$(function(){
+$('#share-this-site a').each(function(){
+var url = $(this).attr('href') + '?' + $(this).attr('rev')    .replace(/{URL}/g, encodeURIComponent(self.location.href))
+        .replace(/{TITLE}/g, encodeURIComponent($('title:first').text()))
+        .replace(/{H1}/g, encodeURIComponent($('h1:first').text()))
+        .replace(/{TXT}/g, encodeURIComponent($('meta[name="description"]').attr('content')))
+        .replace(/{TAG}/g, encodeURIComponent($('meta[name="keywords"]').attr('content')));
+$(this).attr({'href': url, 'target': '_blank'});
+});
+});
+</script>
+
+<ul id="share-this-site">
+<li><a href="mailto:" rev="body={URL}%0A%0A{TXT}&amp;subject={TITLE}" class="share_email"><span class="icon"></span>Mail</a></li>
+<li><a href="http://www.facebook.com/sharer.php?s=100" rev="&amp;p[url]={URL}&amp;p[title]={TITLE}&amp;p[summary]={TXT}" class="share_facebook"><span class="icon"></span>Facebook</a></li>
+<li><a href="http://twitter.com/home" rev="status={H1} {URL}" class="share_twitter"><span class="icon"></span>Twitter</a></li>
+<li><a href="http://www.pinterest.com/pin/create/button/" rev="url=index.html class="share_pinterest"><span class="icon"></span>Pinterest</a></li>
+<li><a href="http://www.linkedin.com/shareArticle" rev="mini=true&amp;url={URL}&amp;title={TITLE}" class="share_linkedin"><span class="icon"></span>Linkedin</a></li>
+<li><a href="http://google.com/bookmarks/mark" rev="op=edit&amp;bkmk={URL}&amp;title={TITLE}&amp;annotation={TXT}&amp;labels={TAG}" class="share_google"><span class="icon"></span>Google</a></li>
+</ul>
